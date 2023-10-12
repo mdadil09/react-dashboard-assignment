@@ -1,0 +1,173 @@
+.dashboard-container{
+    display: flex;
+}
+
+.dashboard-container .sidebar{
+    position: absolute;
+    flex: 0.15;
+    width: 280px;
+    height: 944px;
+    left: 43px;
+    top: calc(50% - 944px/2);
+    background: linear-gradient(180deg, #4285F4 0%, #3C83F9 100%);
+    border-radius: 20px;
+}
+
+.dashboard-container .sidebar .help{
+    position: absolute;
+    left: 17.86%;
+    right: 70%;
+    top: 87.92%;
+    bottom: 10.28%;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 17px;
+    color: #FFFFFF;
+}
+
+.dashboard-container .sidebar .contact-us{
+    position: absolute;
+    left: 17.86%;
+    right: 54.29%;
+    top: 91.84%;
+    bottom: 6.36%;
+
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 17px;
+    color: #FFFFFF;
+}
+
+.dashboard-container .sidebar .settings{
+    position: absolute;
+    left: 31.43%;
+    right: 41.79%;
+    top: 43.64%;
+    bottom: 54.03%;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 22px;
+    color: #FFFFFF;
+    white-space: nowrap;
+}
+
+.dashboard-container .sidebar .setting-icon{
+    position: absolute;
+    left: 17.86%;
+    right: 76.06%;
+    top: 43.86%;
+    bottom: 54.24%;
+}
+
+.dashboard-container .sidebar .users{
+    position: absolute;
+    left: 31.43%;
+    right: 50.71%;
+    top: 37.08%;
+    bottom: 60.59%;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 22px;
+    color: #FFFFFF;
+}
+
+.dashboard-container .sidebar .user-icon{
+    position: absolute;
+    width: 18px;
+    height: 18px;
+    left: 50px;
+    top: 352px;
+}
+
+.dashboard-container .sidebar .schedules{
+    position: absolute;
+    left: 31.43%;
+    right: 35.36%;
+    top: 30.51%;
+    bottom: 67.16%;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 22px;
+    color: #FFFFFF;
+}
+
+.dashboard-container .sidebar .schedules-icon{
+    position: absolute;
+    left: 17.86%;
+    right: 75.71%;
+    top: 30.72%;
+    bottom: 67.37%; 
+}
+
+.dashboard-container .sidebar .transactions{
+    position: absolute;
+    left: 31.43%;
+    right: 27.5%;
+    top: 23.94%;
+    bottom: 73.73%;
+
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 22px;
+    color: #FFFFFF;
+}
+
+.dashboard-container .sidebar .transaction-icon{
+    position: absolute;
+    left: 17.86%;
+    right: 75.71%;
+    top: 23.94%;
+    bottom: 73.86%;
+    transform: matrix(-1, 0, 0, 1, 0, 0); 
+}
+
+.dashboard-container .sidebar .dash{
+    position: absolute;
+    left: 31.43%;
+    right: 31.43%;
+    top: 17.37%;
+    bottom: 80.3%;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 22px;
+    color: #FFFFFF;
+}
+
+.dashboard-container .sidebar .dashboard-icon{
+    position: absolute;
+    left: 17.86%;
+    right: 75.71%;
+    top: 17.58%;
+    bottom: 80.51%; 
+}
+
+.dashboard-container .sidebar .board{
+    position: absolute;
+    left: 17.86%;
+    right: 38.21%;
+    top: 6.36%;
+    bottom: 88.98%;
+
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 44px;
+    /* identical to box height */
+
+    color: #FFFFFF;
+}
