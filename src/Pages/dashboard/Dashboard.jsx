@@ -8,6 +8,10 @@ import transaction from "../../assests/transaction.png";
 import search from "../../assests/search.png";
 import bell from "../../assests/bell.png";
 import vector from "../../assests/vector.webp";
+import RevenueCards from "../../components/cards/RevenueCards";
+import TransactionCards from "../../components/cards/TransactionCards";
+import LikesCards from "../../components/cards/LikesCards";
+import UsersCards from "../../components/cards/UsersCards";
 
 const Dashboard = () => {
   return (
@@ -51,6 +55,14 @@ const Dashboard = () => {
             <img src={vector} alt="vector" />
           </div>
         </div>
+        <div className="top-cards">
+          <RevenueCards />
+          <TransactionCards />
+          <LikesCards />
+          <UsersCards />
+        </div>
+        <div className="middle-cards"></div>
+        <div className="bottom-cards"></div>
       </div>
     </div>
   );

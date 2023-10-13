@@ -198,7 +198,7 @@
     background-color: #FFFFFF;
     width: 197.6px;
     height: 32.93px;
-    left: 1103px;
+    left: 1333px;
     box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
     padding-right: 10px;
     padding-left: 10px;
@@ -227,7 +227,7 @@
 
 .dashboard-container .main-page .header .vector{
     position: absolute;
-    left: 133%;
+    left: 157%;
     right: 7.47%;
     top: 7.57%;
     bottom: 90.39%;
@@ -244,11 +244,86 @@
     position: absolute;
     width: 30px;
     height: 30px;
-    left: 1360px;
+    left: 1600px;
 }
 
 .dashboard-container .main-page .header .mask img{
     width: 30px;
     height: 30px;
     border-radius: 50%;
+}
+
+.dashboard-container .main-page .top-cards{
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 0px;
+    gap: 17px;
+    position: absolute;
+    width: 1800px;
+    height: 200px;
+    left: 390px;
+    top: 140.5px;
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+}
+
+.card{
+    width: 400px;
+    height: 200px;
+    box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
+    border-radius: 20px;
+    border: 2px solid #E0E0E0;
+    left: 0%;
+    right: 0%;
+    top: 0%;
+    bottom: 0%;
+}
+
+.card .rev-logo{
+    margin-top: 24.65px;
+    margin-left: 33.42px;
+}
+
+/* .rev-logo img{
+    width: 40px;
+    height: 40px; 
+} */
+
+.rev-title{
+    margin-top: 14.65px;
+    margin-left: 33.42px;
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 21px;
+    line-height: 29px;
+    color: #000000;
+}
+
+.rev-total{
+    display: flex;
+}
+
+.rev-amount{
+    margin-top: 14.65px;
+    margin-left: 33.42px;
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 29px;
+    width: 134px;
+}
+
+.rev-per{
+    margin-top: 9px;
+    margin-left: 132px;
+    font-size: 24px;
+    font-weight: 600;
+    color: #006400;
+    background-color: #90ee90;
+    padding: 10px;
+    border-radius: 50px;
 }
