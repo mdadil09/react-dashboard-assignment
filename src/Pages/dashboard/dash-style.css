@@ -171,3 +171,42 @@
 
     color: #FFFFFF;
 }
+
+.dashboard-container .main-page .header{
+    position: absolute;
+    width: 1000px;
+    height: 32.93px;
+    left: 390px;
+    top: 71px;
+}
+
+.dashboard-container .main-page .header .dashboard-title{
+    position: absolute;
+    width: 138px;
+    height: 29px;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 29px;
+    color: #000000;
+}
+
+.dashboard-container .main-page .header .search-bar{
+    position: absolute;
+    width: 197.6px;
+    height: 32.93px;
+    left: 1103px;
+}
+
+.dashboard-container .main-page .header .search-bar input{
+    width: 197.6px;
+    height: 32.93px;
+    left: 1118px;
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 17px;
+    color: #B0B0B0;
+}

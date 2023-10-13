@@ -5,6 +5,7 @@ import user from "../../assests/user.png";
 import dashboard from "../../assests/dashboard.png";
 import event from "../../assests/event.png";
 import transaction from "../../assests/transaction.png";
+import search from "../../assests/search.png";
 
 const Dashboard = () => {
   return (
@@ -34,7 +35,15 @@ const Dashboard = () => {
         <div className="help">Help</div>
         <div className="contact-us">Contact Us</div>
       </div>
-      <div className="main-page">Main Page</div>
+      <div className="main-page">
+        <div className="header">
+          <div className="dashboard-title">Dashboard</div>
+          <div className="search-bar">
+            <input type="text" placeholder="Search..." />
+            <img src={search} alt="search" />
+          </div>
+        </div>
+      </div>
     </div>
   );
 };
