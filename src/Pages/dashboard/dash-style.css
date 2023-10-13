@@ -193,15 +193,21 @@
 }
 
 .dashboard-container .main-page .header .search-bar{
+    display: flex;
     position: absolute;
+    background-color: #FFFFFF;
     width: 197.6px;
     height: 32.93px;
     left: 1103px;
+    box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
+    padding-right: 10px;
+    padding-left: 10px;
+    border-radius: 8px;
 }
 
 .dashboard-container .main-page .header .search-bar input{
     width: 197.6px;
-    height: 32.93px;
+    height: 32px;
     left: 1118px;
     font-family: 'Lato';
     font-style: normal;
@@ -209,4 +215,40 @@
     font-size: 14px;
     line-height: 17px;
     color: #B0B0B0;
+    border: none;
+    background-color: #FFFFFF;
+    outline: none;
+}
+
+.dashboard-container .main-page .header .search-bar img{
+    height: 14px;
+    margin-top: 8px;
+}
+
+.dashboard-container .main-page .header .vector{
+    position: absolute;
+    left: 133%;
+    right: 7.47%;
+    top: 7.57%;
+    bottom: 90.39%;
+    background: #000000;
+    margin-top: 5px;
+
+}
+
+.dashboard-container .main-page .header .vector img{
+    height: 20.89px;
+}
+
+.dashboard-container .main-page .header .mask{
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    left: 1360px;
+}
+
+.dashboard-container .main-page .header .mask img{
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
 }

@@ -6,6 +6,8 @@ import dashboard from "../../assests/dashboard.png";
 import event from "../../assests/event.png";
 import transaction from "../../assests/transaction.png";
 import search from "../../assests/search.png";
+import bell from "../../assests/bell.png";
+import vector from "../../assests/vector.webp";
 
 const Dashboard = () => {
   return (
@@ -41,6 +43,12 @@ const Dashboard = () => {
           <div className="search-bar">
             <input type="text" placeholder="Search..." />
             <img src={search} alt="search" />
+          </div>
+          <div className="vector">
+            <img src={bell} alt="bell" />
+          </div>
+          <div className="mask">
+            <img src={vector} alt="vector" />
           </div>
         </div>
       </div>
