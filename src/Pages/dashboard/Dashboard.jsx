@@ -13,6 +13,7 @@ import TransactionCards from "../../components/cards/TransactionCards";
 import LikesCards from "../../components/cards/LikesCards";
 import UsersCards from "../../components/cards/UsersCards";
 import ActivityCard from "../../components/cards/ActivityCard";
+import TopProductCard from "../../components/cards/TopProductCard";
 
 const Dashboard = () => {
   return (
@@ -65,7 +66,9 @@ const Dashboard = () => {
         <div className="middle-cards">
           <ActivityCard />
         </div>
-        <div className="bottom-cards"></div>
+        <div className="bottom-cards">
+          <TopProductCard />
+        </div>
       </div>
     </div>
   );

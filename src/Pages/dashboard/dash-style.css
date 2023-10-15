@@ -616,3 +616,184 @@
     top: 5px;
     border: 1px solid #EAEAEA;
 }
+
+.bar_1_1{
+    position: absolute;
+    width: 38.41px;
+    height: 245px;
+    left: 156px;
+    top: 101px;
+    bottom: 21.39%;
+    background: #98D89E;
+    border-radius: 4px;
+    transform: matrix(1, 0, 0, -1, 0, 0);
+}
+
+.bar_1_2{
+    position: absolute;
+    width: 38.41px;
+    height: 195px;
+    left: 204.41px;
+    top: 152px;
+    bottom: 25.07%;
+    background: #EE8484;
+    border-radius: 4px;
+    transform: matrix(1, 0, 0, -1, 0, 0);
+}
+
+.bar_2_1{
+    position: absolute;
+    width: 38.41px;
+    height: 175px;
+    left: 456px;
+    top: 172px;
+    bottom: 26.93%;
+    background: #98D89E;
+    border-radius: 4px;
+    transform: matrix(1, 0, 0, -1, 0, 0);
+}
+
+.bar_2_2{
+    position: absolute;
+    width: 38.41px;
+    left: 504.41px;
+    height: 225px;
+    top: 122px;
+    bottom: 23.2%;
+    background: #EE8484;
+    border-radius: 4px;
+    transform: matrix(1, 0, 0, -1, 0, 0);
+}
+
+.bar_3_1{
+    position: absolute;
+    width: 38.41px;
+    height: 99px;
+    left: 760px;
+    top: 59.6%;
+    bottom: 32.89%;
+    background: #98D89E;
+    border-radius: 4px;
+    transform: matrix(1, 0, 0, -1, 0, 0);
+}
+
+.bar_3_2{
+    position: absolute;
+    width: 38.41px;
+    height: 148px;
+    left: 808.41px;
+    top: 199px;
+    bottom: 28.87%;
+    background: #EE8484;
+    border-radius: 4px;
+    transform: matrix(1, 0, 0, -1, 0, 0);
+}
+
+.bar_4_1{
+    position: absolute;
+    width: 38.41px;
+    height: 196px;
+    left: 1072px;
+    top: 150px;
+    bottom: 25.05%;
+    background: #98D89E;
+    border-radius: 4px;
+    transform: matrix(1, 0, 0, -1, 0, 0);
+}
+
+.bar_4_2{
+    position: absolute;
+    width: 38.41px;
+    height: 172px;
+    left: 1120.41px;
+    top: 175px;
+    bottom: 27.27%;
+    background: #EE8484;
+    border-radius: 4px;
+    transform: matrix(1, 0, 0, -1, 0, 0);
+}
+
+.chart_weeks{
+    display: flex;
+    position: absolute;
+    width: 648px;
+    height: 19px;
+    left: 156px;
+    top: 356px;
+}
+
+.week-1{
+    position: absolute;
+    width: 48px;
+    height: 17px;
+    left: 19px;
+    top: 0px;
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 17px;
+    color: #858585;  
+}
+
+.week-2{
+    position: absolute;
+    width: 48px;
+    height: 19px;
+    left: 312px;
+    top: 0px;
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 19px;
+    color: #858585;
+}
+
+.week-3{
+    position: absolute;
+    width: 48px;
+    height: 19px;
+    left: 624px;
+    top: 0px;
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 19px;
+    color: #858585;
+}
+
+.week-4{
+    position: absolute;
+    width: 48px;
+    height: 19px;
+    left: 936px;
+    top: 0px;
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 19px;
+    color: #858585;
+}
+
+.bottom-cards{
+    position: absolute;
+    width: 480px;
+    height: 256px;
+    left: 390px;
+    top: 839px;
+}
+
+.top-product-card{
+    position: absolute;
+    left: 0%;
+    right: 0%;
+    top: 0%;
+    bottom: 0%;
+    background: #FFFFFF;
+    border: 2px solid #E0E0E0;
+    box-shadow: 4px 4px 20px rgba(0, 0, 0, 0.1);
+    border-radius: 20px;
+}

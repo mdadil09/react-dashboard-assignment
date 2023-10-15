@@ -1,4 +1,5 @@
 import React from "react";
+import "../../Pages/dashboard/dash-style.css";
 
 const ActivityCard = () => {
   return (
@@ -34,6 +35,20 @@ const ActivityCard = () => {
           <div className="activity-group-13-0">0</div>
           <div className="activity-group-13-0-line"></div>
         </div>
+      </div>
+      <div className="bar_1_1"></div>
+      <div className="bar_1_2"></div>
+      <div className="bar_2_1"></div>
+      <div className="bar_2_2"></div>
+      <div className="bar_3_1"></div>
+      <div className="bar_3_2"></div>
+      <div className="bar_4_1"></div>
+      <div className="bar_4_2"></div>
+      <div className="chart_weeks">
+        <div className="week-1">Week 1</div>
+        <div className="week-2">Week 2</div>
+        <div className="week-3">Week 3</div>
+        <div className="week-4">Week 4</div>
       </div>
     </div>
   );
