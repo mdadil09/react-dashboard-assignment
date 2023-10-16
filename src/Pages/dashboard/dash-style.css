@@ -790,7 +790,7 @@
 .top-product-card{
     position: absolute;
     width: 815px;
-    height: 418.33px;
+    height: 359px;
     left: 0%;
     right: 0%;
     top: 0%;
@@ -804,7 +804,7 @@
 .add-user-card{
     position: absolute;
     width: 815px;
-    height: 418.33px;
+    height: 359px;
     left: 850px;
     right: 0%;
     top: 0%;
@@ -813,4 +813,153 @@
     border: 2px solid #E0E0E0;
     box-shadow: 4px 4px 20px rgba(0, 0, 0, 0.1);
     border-radius: 20px;
+}
+
+.top-product-text{
+    position: absolute;
+    width: 250px;
+    height: 44px;
+    left: 40px;
+    top: 40px;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 22px;
+    color: #000000;
+}
+
+.top-product-text-date{
+    position: absolute;
+    color: var(--Secondary-Text, #858585);
+    font-family: Montserrat;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    margin-left: 600px;
+    margin-top: 40px;
+}
+
+.basic-tees-eclipse{
+    position: absolute;
+    width: 11px;
+    height: 11px;
+    flex-shrink: 0;
+    border-radius: 50%;
+    background-color: #98D89E;
+    margin-left: 500px;
+    margin-top: 120px;
+}
+
+.top-product-basic-tees{
+    position: absolute;
+    color: #000;
+    font-family: Montserrat;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    margin-left: 530px;
+    margin-top: 112px;
+}
+
+.top-product-basic-tees-text{
+    position: absolute;
+    color: var(--Secondary-Text, #858585);
+    font-family: Lato;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    margin-left: 530px;
+    margin-top: 150px;
+}
+
+.custom-pants-eclipse{
+    position: absolute;
+    width: 11px;
+    height: 11px;
+    flex-shrink: 0;
+    border-radius: 50%;
+    background-color: #F6DC7D;
+    margin-left: 500px;
+    margin-top: 190px;
+}
+
+.top-product-custom-pants{
+    position: absolute;
+    color: #000;
+    font-family: Montserrat;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    margin-top: 180px;
+    margin-left: 530px;
+}
+
+.top-product-custom-pants-text{
+    position: absolute;
+    color: var(--Secondary-Text, #858585);
+    font-family: Lato;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    margin-left: 530px;
+    margin-top: 220px;
+}
+
+.supper-hoodies-ecilipse{
+    position: absolute;
+    width: 11px;
+    height: 11px;
+    flex-shrink: 0;
+    border-radius: 50%;
+    background-color: #EE8484;
+    margin-top: 260px;
+    margin-left: 500px;
+}
+
+.top-product-supper-hoodies{
+    position: absolute;
+    color: #000;
+    font-family: Montserrat;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    margin-top: 250px;
+    margin-left: 530px;
+}
+
+.top-product-supper-hoodies-text{
+    position: absolute;
+    color: var(--Secondary-Text, #858585);
+    font-family: Lato;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    margin-top: 290px;
+    margin-left: 530px;
+}
+
+.top-product-donut{
+    position: absolute;
+    margin-top: 60px;
+    margin-left: 40px;
+}
+
+.add-user-card button{
+    position: absolute;
+    top: 50%;
+    left: 45%;
+    transform: translate(0, -50%);
+    padding: 10px;
+    border-radius: 50%;
+    border: none;
+    cursor: pointer;
+    padding: 20px;
 }
