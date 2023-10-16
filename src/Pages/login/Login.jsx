@@ -13,6 +13,8 @@ const Login = () => {
     <div className="login-container">
       <div className="color-container">
         <h3>LOGO</h3>
+        <Link to="/dashboard">dashboard</Link>
+
         <div className="title">
           <h1>Board.</h1>
         </div>

@@ -780,15 +780,32 @@
 
 .bottom-cards{
     position: absolute;
-    width: 480px;
-    height: 256px;
+    width: 1670px;
+    height: 450px;
     left: 390px;
     top: 839px;
+    bottom: 20px;
 }
 
 .top-product-card{
     position: absolute;
+    width: 815px;
+    height: 418.33px;
     left: 0%;
+    right: 0%;
+    top: 0%;
+    bottom: 0%;
+    background: #FFFFFF;
+    border: 2px solid #E0E0E0;
+    box-shadow: 4px 4px 20px rgba(0, 0, 0, 0.1);
+    border-radius: 20px;
+}
+
+.add-user-card{
+    position: absolute;
+    width: 815px;
+    height: 418.33px;
+    left: 850px;
     right: 0%;
     top: 0%;
     bottom: 0%;

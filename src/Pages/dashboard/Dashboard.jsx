@@ -14,6 +14,7 @@ import LikesCards from "../../components/cards/LikesCards";
 import UsersCards from "../../components/cards/UsersCards";
 import ActivityCard from "../../components/cards/ActivityCard";
 import TopProductCard from "../../components/cards/TopProductCard";
+import AddUserCard from "../../components/cards/AddUserCard";
 
 const Dashboard = () => {
   return (
@@ -68,6 +69,7 @@ const Dashboard = () => {
         </div>
         <div className="bottom-cards">
           <TopProductCard />
+          <AddUserCard />
         </div>
       </div>
     </div>
