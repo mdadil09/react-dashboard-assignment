@@ -963,3 +963,40 @@
     cursor: pointer;
     padding: 20px;
 }
+
+.modal-header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* padding-top: 16px; */
+}
+
+.modal-header-text{
+    align-items: stretch;
+    color: var(--light-bulma, #231F20);
+    font-feature-settings: 'clig' off, 'liga' off;
+    font-family: Figtree;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 32px; /* 160% */
+}
+
+.modal-header button{
+    background: none;
+    border: none;
+    cursor: pointer;
+    border-radius: 8px;
+}
+
+.modal-content{
+    display: flex;
+    width: 490px;
+    height: 376px;
+    padding: 24px;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 24px;
+    flex-shrink: 0;
+}
+
