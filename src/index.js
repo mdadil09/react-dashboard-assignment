@@ -4,14 +4,19 @@ import App from "./App";
 import reportWebVitals from "./reportWebVitals";
 import { BrowserRouter } from "react-router-dom";
 import Modal from "react-modal";
+import { AppProvider, AppContext } from "./AppContext/AppContext";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 Modal.setAppElement("#root");
 
+export { AppContext };
+
 root.render(
   <React.StrictMode>
     <BrowserRouter>
-      <App />
+      <AppProvider>
+        <App />
+      </AppProvider>
     </BrowserRouter>
   </React.StrictMode>
 );

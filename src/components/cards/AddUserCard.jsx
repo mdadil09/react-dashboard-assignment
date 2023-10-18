@@ -1,8 +1,13 @@
-import React, { useState } from "react";
+import React, { useContext, useState } from "react";
 import plusadd from "../../assests/plusadd.png";
 import Modal from "react-modal";
 import "../../Pages/dashboard/dash-style.css";
 import close from "../../assests/close.svg";
+import { AppContext } from "../../AppContext/AppContext";
+import instag from "../../assests/insta.svg";
+import whatsapp from "../../assests/whatsapp.svg";
+import mail from "../../assests/Mail.svg";
+import logoyou from "../../assests/logo-twitter.svg";
 
 const customStyles = {
   content: {
@@ -42,9 +47,27 @@ const AddUserCard = () => {
   const [modalIsOpen, setIsOpen] = useState(false);
   const [secondaryModal, setSecondaryModal] = useState(false);
 
+  const {
+    name,
+    email,
+    mobile,
+    insta,
+    youtube,
+    userData,
+    handleNameChange,
+    handleEmailChange,
+    handleMobileChange,
+    handleInstaChange,
+    handleYoutubeChange,
+    addUserClick,
+  } = useContext(AppContext);
+
+  console.log(userData);
+
   const openModal2 = () => {
     setIsOpen(false);
     setSecondaryModal(true);
+    // addUserClick();
   };
   const openModal = () => {
     setSecondaryModal(false);
@@ -58,20 +81,42 @@ const AddUserCard = () => {
   const closeModal2 = (event) => {
     event.preventDefault();
     setSecondaryModal(false);
+    addUserClick();
   };
-
-  //let subtitle;
-  // const afterOpenModal = () => {
-  //   // references are now sync'd and can be accessed.
-  //   subtitle.style.color = "#f00";
-  // };
 
   return (
     <>
       <div className="add-user-card">
-        <button onClick={openModal}>
-          <img src={plusadd} alt="plusadd" />
-        </button>
+        {userData.length <= 0 ? (
+          <button onClick={openModal}>
+            <img src={plusadd} alt="plusadd" />
+          </button>
+        ) : null}
+        {userData.map(({ name, email, mobileNo, insta, youtube }) => (
+          <>
+            <div className="add-user-card-name">{name}</div>
+            <div className="add-user-card-mobile">
+              <div className="whatsapp">
+                <img src={whatsapp} alt="whatsapp" />
+                <div className="mobile"> {mobileNo}</div>
+              </div>
+              <div className="instag">
+                <img src={instag} alt="" />
+                <div className="insta">{insta}</div>
+              </div>
+            </div>
+            <div className="add-user-card-mail">
+              <div className="email">
+                <img src={mail} alt="mail" />
+                <div className="mail">{email}</div>
+              </div>
+              <div className="youtube">
+                <img src={logoyou} alt="youtube" />
+                <div className="you-text">{youtube}</div>
+              </div>
+            </div>
+          </>
+        ))}
       </div>
       <Modal
         isOpen={modalIsOpen}
@@ -94,11 +139,26 @@ const AddUserCard = () => {
             <div className="header-2-rect"></div>
           </div>
           <div className="modal-input-title">Enter Name*</div>
-          <input type="text" placeholder="Eg. Jon Doe" />
+          <input
+            type="text"
+            placeholder="Eg. Jon Doe"
+            onChange={handleNameChange}
+            value={name}
+          />
           <div className="modal-input-title">Enter Email*</div>
-          <input type="text" placeholder="Eg. jondoe@gmail.com" />
+          <input
+            type="text"
+            placeholder="Eg. jondoe@gmail.com"
+            onChange={handleEmailChange}
+            value={email}
+          />
           <div className="modal-input-title">Enter Phone*</div>
-          <input type="text" placeholder="9801916395" />
+          <input
+            type="text"
+            placeholder="9801916395"
+            onChange={handleMobileChange}
+            value={mobile}
+          />
         </div>
         <div className="modal-button-container">
           <button className="button-hidden"></button>
@@ -131,11 +191,21 @@ const AddUserCard = () => {
           <div className="modal-2-input-title">
             Instagram Link <span>(optional)</span>
           </div>
-          <input type="text" placeholder="Eg. ..instagram.com/username" />
+          <input
+            type="text"
+            placeholder="Eg. ..instagram.com/username"
+            onChange={handleInstaChange}
+            value={insta}
+          />
           <div className="modal-2-input-title">
             Youtube Link <span>(optional)</span>
           </div>
-          <input type="text" placeholder="Eg. ..youtebe/username" />
+          <input
+            type="text"
+            placeholder="Eg. ..youtebe/username"
+            onChange={handleYoutubeChange}
+            value={youtube}
+          />
         </div>
         <div className="modal-2-button-container">
           <button className="button-white" onClick={openModal}>
