@@ -3,6 +3,8 @@ import "./App.css";
 import Login from "./Pages/login/Login";
 import Signup from "./Pages/signup/Signup";
 import Dashboard from "./Pages/dashboard/Dashboard";
+import { useEffect } from "react";
+import { gapi } from "gapi-script";
 
 function App() {
   return (
