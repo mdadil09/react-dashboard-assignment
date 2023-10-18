@@ -43,9 +43,11 @@ const AddUserCard = () => {
   const [secondaryModal, setSecondaryModal] = useState(false);
 
   const openModal2 = () => {
+    setIsOpen(false);
     setSecondaryModal(true);
   };
   const openModal = () => {
+    setSecondaryModal(false);
     setIsOpen(true);
   };
   const closeModal = (event) => {
@@ -58,7 +60,7 @@ const AddUserCard = () => {
     setSecondaryModal(false);
   };
 
-  let subtitle;
+  //let subtitle;
   // const afterOpenModal = () => {
   //   // references are now sync'd and can be accessed.
   //   subtitle.style.color = "#f00";
@@ -119,25 +121,29 @@ const AddUserCard = () => {
             <img src={close} alt="close" />
           </button>
         </div>
-        <div className="modal-content">
-          <div className="model-content-header">
-            <div className="model-content-header-1">Basic</div>
-            <div className="model-content-header-2">Contact</div>
-            <div className="header-1-rect"></div>
-            <div className="header-2-rect"></div>
+        <div className="modal-2-content">
+          <div className="model-2-content-header">
+            <div className="model-2-content-header-1">Basic</div>
+            <div className="model-2-content-header-2">Social</div>
+            <div className="header-2-1-rect"></div>
+            <div className="header-2-2-rect"></div>
           </div>
-          <div className="modal-input-title">
+          <div className="modal-2-input-title">
             Instagram Link <span>(optional)</span>
           </div>
           <input type="text" placeholder="Eg. ..instagram.com/username" />
-          <div className="modal-input-title">
+          <div className="modal-2-input-title">
             Youtube Link <span>(optional)</span>
           </div>
           <input type="text" placeholder="Eg. ..youtebe/username" />
         </div>
         <div className="modal-2-button-container">
-          <button className="button-hidden"></button>
-          <button className="button-visible">Next</button>
+          <button className="button-white" onClick={openModal}>
+            Back
+          </button>
+          <button className="button-visible" onClick={closeModal2}>
+            Done
+          </button>
         </div>
       </Modal>
     </>
