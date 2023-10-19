@@ -13,9 +13,10 @@ const clientId =
   "529124112473-bqps4a76urr2jn859kp5a0ut2806gip6.apps.googleusercontent.com";
 
 const Login = () => {
-  //const navigate = useNavigate();
+  const navigate = useNavigate();
   const responseGoogle = (response) => {
     console.log(response);
+    window.location.href = "/dashboard";
   };
 
   return (
@@ -44,7 +45,7 @@ const Login = () => {
                 render={(renderProps) => (
                   <button
                     type="button"
-                    className=""
+                    className="googleLogin"
                     onClick={renderProps.onClick}
                     disabled={renderProps.disabled}
                   >

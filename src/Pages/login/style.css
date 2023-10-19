@@ -58,11 +58,12 @@
 }
 
 .buttons{
+    display: flex;
     padding: 20px 20px 20px 0px;
 }
 
 .buttons button{
-    margin-right: 20px;
+    margin-left: 10px;
     color: #808080;
     font-size: 16px;
     font-weight: 400;
@@ -74,6 +75,20 @@
     border: none;
     border-radius: 8px;
     cursor: pointer;
+}
+
+.buttons .googleLogin{
+   color: #808080;
+    font-size: 16px;
+    font-weight: 400;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-left: 10px;
+    padding-right: 10px;
+    background: #ffff;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer; 
 }
 
 .buttons img{
