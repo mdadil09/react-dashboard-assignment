@@ -6,14 +6,13 @@ import linkdin from "../../assests/linkedin.png";
 import discord from "../../assests/discord.png";
 import google from "../../assests/google.png";
 import apple from "../../assests/apple.png";
-import { Link, useNavigate } from "react-router-dom";
+import { Link } from "react-router-dom";
 import { GoogleLogin, GoogleOAuthProvider } from "@react-oauth/google";
 
 const clientId =
   "529124112473-bqps4a76urr2jn859kp5a0ut2806gip6.apps.googleusercontent.com";
 
 const Login = () => {
-  const navigate = useNavigate();
   const responseGoogle = (response) => {
     console.log(response);
     window.location.href = "/dashboard";
