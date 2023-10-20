@@ -17,12 +17,12 @@ const clientId =
   "529124112473-bqps4a76urr2jn859kp5a0ut2806gip6.apps.googleusercontent.com";
 
 const Login = () => {
+  const navigate = useNavigate();
   const responseGoogle = (response) => {
     console.log(response);
-    window.location.href = "/dashboard";
+    navigate("/dashboard");
   };
 
-  const navigate = useNavigate();
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
 
