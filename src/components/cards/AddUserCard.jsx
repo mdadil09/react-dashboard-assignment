@@ -92,8 +92,8 @@ const AddUserCard = () => {
             <img src={plusadd} alt="plusadd" />
           </button>
         ) : null}
-        {userData.map(({ name, email, mobileNo, insta, youtube }) => (
-          <>
+        {userData.map(({ id, name, email, mobileNo, insta, youtube }) => (
+          <div key={id}>
             <div className="add-user-card-name">{name}</div>
             <div className="add-user-card-mobile">
               <div className="whatsapp">
@@ -115,7 +115,7 @@ const AddUserCard = () => {
                 <div className="you-text">{youtube}</div>
               </div>
             </div>
-          </>
+          </div>
         ))}
       </div>
       <Modal

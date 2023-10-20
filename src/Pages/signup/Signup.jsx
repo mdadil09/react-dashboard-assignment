@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import "./style.css";
 import github from "../../assests/github.png";
 import twitter from "../../assests/twitter.png";
@@ -7,8 +7,33 @@ import discord from "../../assests/discord.png";
 import google from "../../assests/google.png";
 import apple from "../../assests/apple.png";
 import { Link } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
+import { createUserWithEmailAndPassword } from "firebase/auth";
+import { auth } from "../../auth/firebase";
 
 const Signup = () => {
+  const navigate = useNavigate();
+  const [email, setEmail] = useState("");
+  const [password, setPassword] = useState("");
+
+  const onSubmit = async (e) => {
+    e.preventDefault();
+
+    await createUserWithEmailAndPassword(auth, email, password)
+      .then((userCredential) => {
+        // Signed in
+        const user = userCredential.user;
+        console.log(user);
+        navigate("/");
+        // ...
+      })
+      .catch((error) => {
+        const errorCode = error.code;
+        const errorMessage = error.message;
+        console.log(errorCode, errorMessage);
+        // ..
+      });
+  };
   return (
     <div className="signup-container">
       <div className="color-container">
@@ -43,11 +68,23 @@ const Signup = () => {
               <label>Name</label>
               <input type="text" placeholder="Enter your name" />
               <label>Email address</label>
-              <input type="email" placeholder="Enter your email" />
+              <input
+                type="email"
+                placeholder="Enter your email"
+                required
+                value={email}
+                onChange={(e) => setEmail(e.target.value)}
+              />
               <label>Password</label>
-              <input type="password" placeholder="Enter your password" />
+              <input
+                type="password"
+                placeholder="Enter your password"
+                required
+                value={password}
+                onChange={(e) => setPassword(e.target.value)}
+              />
               <Link to="/forgot">Forgot Password</Link>
-              <button>Sign Up</button>
+              <button onClick={onSubmit}>Sign Up</button>
             </form>
           </div>
           <p className="reg">

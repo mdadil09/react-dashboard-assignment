@@ -8,6 +8,10 @@ import google from "../../assests/google.png";
 import apple from "../../assests/apple.png";
 import { Link } from "react-router-dom";
 import { GoogleLogin, GoogleOAuthProvider } from "@react-oauth/google";
+import { signInWithEmailAndPassword } from "firebase/auth";
+import { auth } from "../../auth/firebase";
+import { useNavigate } from "react-router-dom";
+import { useState } from "react";
 
 const clientId =
   "529124112473-bqps4a76urr2jn859kp5a0ut2806gip6.apps.googleusercontent.com";
@@ -16,6 +20,26 @@ const Login = () => {
   const responseGoogle = (response) => {
     console.log(response);
     window.location.href = "/dashboard";
+  };
+
+  const navigate = useNavigate();
+  const [email, setEmail] = useState("");
+  const [password, setPassword] = useState("");
+
+  const onLogin = (e) => {
+    e.preventDefault();
+    signInWithEmailAndPassword(auth, email, password)
+      .then((userCredential) => {
+        // Signed in
+        const user = userCredential.user;
+        navigate("/dashboard");
+        console.log(user);
+      })
+      .catch((error) => {
+        const errorCode = error.code;
+        const errorMessage = error.message;
+        console.log(errorCode, errorMessage);
+      });
   };
 
   return (
@@ -67,11 +91,21 @@ const Login = () => {
           <div className="login-form">
             <form>
               <label>Email address</label>
-              <input type="email" placeholder="Enter your email" />
+              <input
+                type="email"
+                placeholder="Enter your email"
+                required
+                onChange={(e) => setEmail(e.target.value)}
+              />
               <label>Password</label>
-              <input type="password" placeholder="Enter your password" />
+              <input
+                type="password"
+                placeholder="Enter your password"
+                required
+                onChange={(e) => setPassword(e.target.value)}
+              />
               <Link to="/forgot">Forgot Password</Link>
-              <button>Sign In</button>
+              <button onClick={onLogin}>Sign In</button>
             </form>
           </div>
           <p className="reg">
